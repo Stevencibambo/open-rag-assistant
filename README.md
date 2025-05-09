@@ -1,6 +1,7 @@
 # Open RAG Assistant Backend
 This is the backend service of a conversational assistant designed to improve access to public information using 
-Retrieval-Augmented Generation (RAG). It uses FastAPI for the API layer 
+Retrieval-Augmented Generation (RAG) [Frontend](https://github.com/Stevencibambo/rag-assistant-frontend). 
+It uses FastAPI for the API layer 
 and Ollama to run the Mistral LLM locally. The system allows loading and querying 
 documents to answer questions in natural language.
 
