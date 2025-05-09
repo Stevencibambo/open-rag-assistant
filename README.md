@@ -17,6 +17,7 @@ documents to answer questions in natural language.
 - mistral model pulled in Ollama:
 
 > ollama pull mistral
+
 or
 > ollama run mistral
 
@@ -25,10 +26,12 @@ if you want uses llama changes mistral to llama3.2
 ## Installation
 Clone the repository
 > git clone https://github.com/Stevencibambo/open-rag-assistant.git
+
 > cd open-rag-assistant
 
 Create virtual environment
 > conda create -n env_name python=3.10
+
 > conda activate env_name
 
 Install dependencies
