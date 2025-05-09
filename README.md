@@ -1,4 +1,4 @@
-# open-rag-assistant Backend
+# Open RAG Assistant Backend
 This is the backend service of a conversational assistant designed to improve access to public information using 
 Retrieval-Augmented Generation (RAG). It uses FastAPI for the API layer 
 and Ollama to run the Mistral LLM locally. The system allows loading and querying 
@@ -24,7 +24,7 @@ if you want uses llama changes mistral to llama3.2
 
 ## Installation
 Clone the repository
-> git clone https://github.com/your-username/open-rag-assistant.git
+> git clone https://github.com/Stevencibambo/open-rag-assistant.git
 > cd open-rag-assistant
 
 Create virtual environment
