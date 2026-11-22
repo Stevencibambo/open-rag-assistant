@@ -36,7 +36,7 @@ qa_chain = ConversationalRetrievalChain.from_llm(
 
 # Define small talk triggers
 SMALL_TALK_KEYWORDS = [
-    "merci", "bonjour", "thank you", "hello", "hi", "ça va", "salut", "bonjour", "ok", "cool", "thanks"
+    "merci", "bonsoir", "bonjour", "thank you", "hello", "hi", "ça va", "salut", "bonjour", "ok", "cool", "thanks"
 ]
 
 

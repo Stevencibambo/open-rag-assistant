@@ -48,7 +48,7 @@ then transform the documents (consider putting all the documents in docs directo
 > python transformer.py
 
 ## Start the API server
-> uvicorn app.main:app --reload
+> uvicorn app:app --reload
 
 the API will be available at: http://localhost:8000/docs
 

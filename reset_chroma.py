@@ -10,10 +10,10 @@ db_path = "./chroma_db"
 
 if os.path.exists(db_path):
     shutil.rmtree(db_path)
-    print("🧹 Old Chroma DB directory deleted!")
+    print("[INFO] Old Chroma DB directory deleted!")
 else:
-    print("ℹ️ No Chroma db directory found.")
+    print("[ERROR] No Chroma db directory found.")
 
 # Recreate an empty directory
 os.makedirs(db_path)
-print("✅ Chroma db directory is ready to create the vector.")
+print("[WARNING] Chroma db directory is ready to create the vector.")

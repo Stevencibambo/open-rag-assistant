@@ -1,5 +1,5 @@
 # ./app.py
-# run : uvicorn main:app --reload to start the server
+# run : uvicorn app:app --reload to start the server
 # access via : 127.0.0.1:8000/docs
 
 from fastapi import FastAPI

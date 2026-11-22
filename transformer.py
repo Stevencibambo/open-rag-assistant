@@ -39,14 +39,14 @@ def load_documents_from_directory(directory):
             docs = loader.load()
             documents.extend(docs)
         except Exception as e:
-            print(f"❌ Failed to load {file_path}: {e}")
+            print(f"[ERROR] Failed to load {file_path}: {e}")
     return documents
 
 
 # Load all documents
-print("📁 Loading documents...")
+print("[INFO] Loading documents...")
 documents = load_documents_from_directory(DOCS_DIR)
-print(f"✅ {len(documents)} documents loaded.")
+print(f"[INFO] {len(documents)} documents loaded.")
 
 # Split documents in small chunks
 splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
@@ -61,6 +61,6 @@ vector_store = Chroma.from_documents(
     embedding_function,
     persist_directory="./chroma_db"
 )
-print("✅ Vector store created and persisted!")
+print("[INFO] Vector store created and persisted!")
 
 

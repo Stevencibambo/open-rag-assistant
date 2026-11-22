@@ -11,12 +11,13 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 
 
 # 1. load markdown document
-loader = UnstructuredMarkdownLoader("docs/public_services.md")
+loader = UnstructuredMarkdownLoader("docs/Brochure_SMD_2_rmekuc.pdf")
 documents = loader.load()
 
 # 2. Split the document in small chunks
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
 texts = text_splitter.split_documents(documents)
+
 
 
 # 3. Generating embeddings with Hugging Face Embeddings
